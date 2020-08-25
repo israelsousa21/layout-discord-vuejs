@@ -3,7 +3,7 @@
   :class="{'serverbutton-isHome' : isHome, 'serverbutton-hasNotification' : hasNotification}"
   >
   <img src="../../assets/discord.svg" v-if="isHome" />
-  <div class="mentions">4</div>
+  <div class="mentions" v-if="mentions">{{ mentions }}</div>
   </div>
 </template>
 <script>
